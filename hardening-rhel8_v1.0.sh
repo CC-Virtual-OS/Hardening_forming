@@ -121,6 +121,7 @@ function perform_remediation {
 
 }
 
+###########################################
 # Function to replace configuration setting in config file or add the configuration setting if
 # it does not exist.
 #
