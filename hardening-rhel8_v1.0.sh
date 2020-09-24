@@ -522,7 +522,7 @@ echo "###############################################"
 echo "#### ** 2.7 ** SPECIAL PURPOSE SERVICES ####"
 echo "###############################################"
 echo 
-echo "##### Tool for managing crypto policies"
+echo "##### Tool for managing crypto policies set DEFAULT profile"
 update-crypto-policies --set DEFAULT
 update-crypto-policies --show
 echo
