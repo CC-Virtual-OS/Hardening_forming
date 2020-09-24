@@ -525,7 +525,11 @@ echo
 echo "##### Tool for managing crypto policies"
 update-crypto-policies --set DEFAULT
 update-crypto-policies --show
- 
+echo
+echo "##### Disable AES-128-CBC and AES-256-CBC with crypto policies"
+echo 'ssh_cipher = -AES-128-CBC -AES-256-CBC' > /etc/crypto-policies/policies/modules/SSH-NO-CBC.pmod
+update-crypto-policies --set DEFAULT:SSH-NO-CBC
+update-crypto-policies --show
 echo
 echo "##### Set default target to multiuser"
 systemctl set-default multi-user.target
