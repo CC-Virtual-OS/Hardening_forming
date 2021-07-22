@@ -464,7 +464,7 @@ else
 fi
 
 echo
-echo "OK: AllowGroups  oper batch ansible administrator"
+echo "OK: AllowGroups  oper batch ansible administrator oinstall"
 replace_or_append '/etc/ssh/sshd_config' '^AllowGroups' 'oper batch ansible administrator' '#### hardening SSHD ###' '%s %s'
 
 
